@@ -8,7 +8,6 @@ const Movements = require('mineflayer-pathfinder').Movements
 const { GoalNear } = require('mineflayer-pathfinder').goals
 const client = new Discord.Client()
 
-let token = require(`./secret.json`)
 
 client.on(`ready`, () =>{
   console.log(`open`)
