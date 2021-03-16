@@ -1,4 +1,5 @@
 'use strict'
+require('dotenv').config();
 const { strict } = require('assert')
 const Discord = require(`discord.js`)
 const mineflayer = require('mineflayer')
@@ -16,8 +17,8 @@ client.on(`ready`, () =>{
 const bot = mineflayer.createBot({
     host: "14b14t.org",
     port: 25565,
-    username: secret.username,
-    password: secret.password
+    username: USER,
+    password: PASS
 })
 bot.loadPlugin(pathfinder)
 
@@ -177,4 +178,4 @@ client.on(`message`, message => {
 
   }
 })
-  client.login(secret.token)
+  client.login(TOKEN)
