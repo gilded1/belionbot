@@ -1,6 +1,12 @@
 {
   "name": "belionbot",
   "version": "1.0.0",
+  "dependencies": {
+    "discord.js": "12.5.1",
+    "mineflayer": "3.3.2",
+    "pathfinder": "0.3.0-1",
+    "dotenv": "8.2.0"
+  },
   "description": "14b14t bot",
   "main": "index.js",
   "scripts": {
