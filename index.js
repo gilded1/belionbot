@@ -16,8 +16,8 @@ client.on(`ready`, () =>{
 const bot = mineflayer.createBot({
     host: "14b14t.org",
     port: 25565,
-    username: USER,
-    password: PASS
+    username: process.env.USER,
+    password: process.env.PASS
 })
 bot.loadPlugin(pathfinder)
 
@@ -177,4 +177,4 @@ client.on(`message`, message => {
 
   }
 })
-  client.login(TOKEN)
+  client.login(process.env.TOKEN)
