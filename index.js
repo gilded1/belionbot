@@ -8,6 +8,7 @@ const Movements = require('mineflayer-pathfinder').Movements
 const { GoalNear } = require('mineflayer-pathfinder').goals
 const client = new Discord.Client()
 
+http.createServer(onRequest).listen(process.env.PORT || 6000)
 
 client.on(`ready`, () =>{
   console.log(`open`)
