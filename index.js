@@ -7,16 +7,6 @@ const pathfinder = require('mineflayer-pathfinder').pathfinder
 const Movements = require('mineflayer-pathfinder').Movements
 const { GoalNear } = require('mineflayer-pathfinder').goals
 const client = new Discord.Client()
-const express = require(`express`)
-const path = require(`path`)
-const app = express();
-
-<<<<<<< HEAD
-app.use(express.static(__dirname + '/dist/'))
-app.use('/src/assets', express.static(__dirname + '/src/assets/'))
-app.listen(process.env.PORT || 8080)
-=======
-
 
 client.on(`ready`, () =>{
   console.log(`open`)
