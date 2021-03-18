@@ -46,7 +46,7 @@ bot.once('spawn', () => {
     let d = new Date()
     let time = d.toLocaleTimeString()
     console.log(`(` + time + `) ` + `${username}: ${message}`)
-    const channel = client.channels.cache.find(channel => channel.name === `belionbot`)
+    const channel = client.channels.cache.find(channel => channel.name === `nekobot`)
     channel.send(`(` + time + `) ` + `${username}: ${message}`)
 
     switch (message) {
